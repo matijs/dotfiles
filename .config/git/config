@@ -22,3 +22,5 @@
 	enabled = true
 [merge]
 	ff = only
+[help]
+	autoCorrect = 1
