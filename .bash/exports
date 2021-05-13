@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+export HISTSIZE=32768;
+export HISTFILESIZE=$HISTSIZE;
+# don't log duplicate commands and blank commands
+export HISTCONTROL=ignoreboth;
+# list of commands that should not be added to history
+export HISTIGNORE="ls:ls *:ll:la:exit:[bf]g";
+# make `vi` the default system editor
+export EDITOR="/usr/bin/vi";
+export VISUAL="/usr/bin/vi";
+# Use `less` for paging when using `man`.
+# - do not clear the screen upon exit: -X
+# - quit if the man page is less than one screen long: -F
+# - make less more colorful: -R
+export MANPAGER="less -FXR";
