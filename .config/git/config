@@ -1,0 +1,24 @@
+[core]
+	editor = /usr/bin/vim
+	pager = /usr/bin/less
+[color]
+	pager = false
+	diff = always
+[user]
+	useConfigOnly = true
+[fetch]
+	prune = true
+	pruneTags = true
+[status]
+	showStash = true
+	showUntrackedFiles = all
+[pull]
+	rebase = true
+[push]
+	default = nothing
+[rebase]
+	autoStash = true
+[rerere]
+	enabled = true
+[merge]
+	ff = only
