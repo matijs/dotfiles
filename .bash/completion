@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+git_completion="/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash";
+
+if [[ -s "${git_completion}" ]]; then
+	source "${git_completion}";
+fi
+
+unset git_completion
