@@ -17,9 +17,9 @@ alias rm='rm -i';
 # always ask for confirmation when copying files
 alias cp='cp -i';
 
-# make `less` immediately exit if paging is not needed: -F
-# make `less` not clear the screen upon exit: -X
-# make `less` respect color control characters: -R
+# make less exit immediately if paging is not needed: -F
+# make less not clear the screen upon exit: -X
+# make less respect color control characters: -R
 alias less='less -FXR';
 
 # make bash expand other aliasses for sudo, http://git.io/wtfbash

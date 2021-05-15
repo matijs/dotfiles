@@ -26,7 +26,7 @@ set shortmess=atI
 
 " enable modeline
 set modeline
-set modelines=1
+set modelines=2
 
 " always (=2) display a status line
 set laststatus=2

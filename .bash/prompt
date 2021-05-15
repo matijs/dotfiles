@@ -2,12 +2,12 @@
 
 git_prompt=/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh;
 
-if [[ -s "${git_prompt}" ]]; then
+if [[ -s ${git_prompt} ]]; then
   source "${git_prompt}";
   export GIT_PS1_SHOWDIRTYSTATE=true;
   export GIT_PS1_SHOWSTASHSTATE=true;
-  export GIT_PS1_SHOWUPSTREAM="auto";
-  export GIT_PS1_DESCRIBE_STYLE="branch";
+  export GIT_PS1_SHOWUPSTREAM='auto';
+  export GIT_PS1_DESCRIBE_STYLE='branch';
   export GIT_PS1_SHOWCOLORHINTS=true;
   export PS1='(\!) \u@\h:\W $(__git_ps1 "[%s] ")\$ ';
 else
