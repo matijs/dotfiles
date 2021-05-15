@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# vim: syn=sh
+# vim: ft=bash
 
 export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
