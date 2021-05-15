@@ -29,4 +29,6 @@ alias sudo='sudo ';
 alias gl='git log --oneline --all --color --graph --decorate';
 
 # always use vim instead of vi, this _strangly_ prevents unexplained non-zero exit codes on OS X
-alias vi=vim;
+alias vi='vim';
+
+alias ip='curl -X GET "https://httpbin.org/ip" -H "accept: application/json"';
