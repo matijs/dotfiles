@@ -25,3 +25,5 @@
 	ff = only
 [help]
 	autoCorrect = 1
+[alias]
+	who = config user.email
