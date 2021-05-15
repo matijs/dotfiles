@@ -15,6 +15,3 @@ else
 fi
 
 unset git_prompt;
-
-# Make sure history works across tmux sessions
-export PROMPT_COMMAND="$PROMPT_COMMAND"
