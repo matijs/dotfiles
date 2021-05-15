@@ -29,3 +29,5 @@
 [alias]
 	who = config user.email
 	remotes = remote --verbose
+[init]
+	defaultBranch = main
