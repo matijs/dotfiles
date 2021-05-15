@@ -6,6 +6,7 @@
 	diff = always
 [user]
 	useConfigOnly = true
+	name = matijs
 [fetch]
 	prune = true
 	pruneTags = true
