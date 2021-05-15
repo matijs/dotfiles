@@ -16,7 +16,7 @@
 [pull]
 	rebase = true
 [push]
-	default = nothing
+	default = current
 [rebase]
 	autoStash = true
 [rerere]
