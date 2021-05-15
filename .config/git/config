@@ -1,18 +1,24 @@
-[core]
-	editor = /usr/bin/vim
-	pager = /usr/bin/less
+[alias]
+	who = config user.email
+	remotes = remote --verbose
 [color]
 	pager = false
 	diff = always
-[user]
-	useConfigOnly = true
-	name = matijs
+[core]
+	editor = /usr/bin/vim
+	pager = /usr/bin/less
+[diff]
+	colorMoved = zebra
+	colorMovedWS = allow-indentation-change
 [fetch]
 	prune = true
 	pruneTags = true
-[status]
-	showStash = true
-	showUntrackedFiles = all
+[help]
+	autoCorrect = 1
+[init]
+	defaultBranch = main
+[merge]
+	ff = only
 [pull]
 	rebase = true
 [push]
@@ -22,15 +28,9 @@
 	autoSquash = true
 [rerere]
 	enabled = true
-[merge]
-	ff = only
-[help]
-	autoCorrect = 1
-[alias]
-	who = config user.email
-	remotes = remote --verbose
-[init]
-	defaultBranch = main
-[diff]
-	colorMoved = zebra
-	colorMovedWS = allow-indentation-change
+[status]
+	showStash = true
+	showUntrackedFiles = all
+[user]
+	useConfigOnly = true
+	name = matijs
