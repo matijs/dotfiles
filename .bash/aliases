@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # use colorized output when listing files and don't show group
-if [[ "$OSTYPE" =~ darwin ]]; then
+if [[ $OSTYPE =~ darwin ]]; then
   alias ls='ls -G';
   alias ll='ls -lG';
 	alias la='ls -lGa';
