@@ -31,3 +31,6 @@
 	remotes = remote --verbose
 [init]
 	defaultBranch = main
+[diff]
+	colorMoved = zebra
+	colorMovedWS = allow-indentation-change
