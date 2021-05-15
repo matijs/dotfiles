@@ -27,3 +27,4 @@
 	autoCorrect = 1
 [alias]
 	who = config user.email
+	remotes = remote --verbose
