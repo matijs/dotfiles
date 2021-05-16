@@ -6,7 +6,7 @@ export HISTFILESIZE=$HISTSIZE;
 # don't log duplicate commands and blank commands
 export HISTCONTROL=ignoreboth;
 # list of commands that should not be added to history
-export HISTIGNORE='ls:ls *:ll:la:exit:[bf]g';
+export HISTIGNORE='ls:ll:la:exit:[bf]g';
 # make `vi` the default system editor
 export EDITOR='/usr/bin/vim';
 export VISUAL='/usr/bin/vim';
