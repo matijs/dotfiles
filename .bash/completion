@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-git_completion="/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash";
-[[ -s ${git_completion} ]] && source "${git_completion}";
+git_completion='/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash';
+
+[[ -x ${git_completion} ]] && source "${git_completion}";
+
 unset git_completion
