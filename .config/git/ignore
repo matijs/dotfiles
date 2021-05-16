@@ -5,9 +5,6 @@
 # Prevent leaking .bash_history
 .bash_history
 
-# Prevent leaking .viminfo
-.viminfo
-
 .DS_Store
 .DS_Store?
 .Spotlight-V100
