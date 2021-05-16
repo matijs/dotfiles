@@ -10,7 +10,7 @@ if command -v dircolors > /dev/null; then
   [[ -e $HOME/dircolors ]] && eval $(dircolors "${HOME}/dircolors");
 fi;
 
-for file in "$(dirname "${BASH_SOURCE}")"/.bash/{exports,aliases,prompt,completion}; do
+for file in "$(dirname "${BASH_SOURCE}")"/.bash/{exports,aliases,prompt,completion,funcs}; do
   [[ -r ${file} ]] && source "${file}";
 done;
 unset file;
