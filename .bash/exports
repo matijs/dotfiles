@@ -15,6 +15,8 @@ export VISUAL='/usr/bin/vim';
 # - quit if the man page is less than one screen long: -F
 # - make less more colorful: -R
 export PAGER='less -FXR';
+# Don't keep less history
+export LESSHISTFILE=-
 
 # Prefer English and use UTF-8.
 printf -v available_locales ' %s ' "$(locale -a)";
