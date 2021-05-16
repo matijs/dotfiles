@@ -18,6 +18,8 @@ export PAGER='less -FXR';
 # Don't keep less history
 export LESSHISTFILE=-
 
+[[ $OSTYPE =~ darwin ]] && export LSCOLORS=dxbxbEaEBxxEhEhBaDaCaD;
+
 # Prefer English and use UTF-8.
 printf -v available_locales ' %s ' "$(locale -a)";
 for lang in en_GB en_US en; do
