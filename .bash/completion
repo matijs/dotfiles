@@ -2,6 +2,8 @@
 
 git_completion='/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash';
 
-[[ -x ${git_completion} ]] && source "${git_completion}";
+if [[ -x ${git_completion} ]]; then
+  source "${git_completion}";
+fi;
 
 unset git_completion
