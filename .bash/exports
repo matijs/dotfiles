@@ -1,21 +1,24 @@
 #!/usr/bin/env bash
-# vim: ft=bash
+# vim: ft=sh
 
-export HISTSIZE=32768;
+# 4096 lines of history is enough
+export HISTSIZE=4096
 export HISTFILESIZE=$HISTSIZE;
 # don't log duplicate commands and blank commands
 export HISTCONTROL=ignoreboth;
 # list of commands that should not be added to history
 export HISTIGNORE='ls:ll:la:exit:[bf]g';
+# add date and time to history
+export HISTTIMEFORMAT='%F %T '
 # make `vi` the default system editor
 export EDITOR='/usr/bin/vim';
 export VISUAL='/usr/bin/vim';
 # Use `less` for paging when using `man`.
 # - do not clear the screen upon exit: -X
 # - quit if the man page is less than one screen long: -F
-# - make less more colorful: -R
+# - make `less` more colorful: -R
 export PAGER='less -FXR';
-# Don't keep less history
+# Don't keep `less` history
 export LESSHISTFILE=-
 
 if [[ $OSTYPE =~ darwin ]]; then
