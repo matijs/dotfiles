@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # vim: ft=sh
 
-# 4096 lines of history is enough
-export HISTSIZE=4096
+# 128 lines of history is enough
+export HISTSIZE=128
 export HISTFILESIZE=$HISTSIZE;
 # don't log duplicate commands and blank commands
 export HISTCONTROL=ignoreboth;
