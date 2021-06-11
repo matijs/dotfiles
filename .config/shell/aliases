@@ -31,3 +31,4 @@ alias vi='vim';
 
 alias ip='curl -X GET "https://httpbin.org/ip" -H "accept: application/json"';
 alias week='date +%V';
+alias epoch='date +%s';
