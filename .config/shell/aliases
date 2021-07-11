@@ -5,10 +5,12 @@ if [[ $OSTYPE =~ darwin ]]; then
   alias ls='ls -G';
   alias ll='ls -lG';
   alias la='ls -lGa';
+  alias lsd='ls -ldG */';
 else
   alias ls='ls --color=auto';
   alias ll='ls --color=auto -l';
   alias la='ls --color=auto -la';
+  alias lsd='ls --color=auto -ld */';
 fi;
 
 # always ask for confirmation when removing files
@@ -26,7 +28,7 @@ alias sudo='sudo ';
 # git aliases
 alias gl='git log --oneline --all --color --graph --decorate';
 
-# always use vim instead of vi, this _strangly_ prevents unexplained non-zero exit codes on OS X
+# always use vim instead of vi, this _strangly_ prevents unexplained non-zero exit codes on macOS
 alias vi='vim';
 
 alias ip='curl -X GET "https://httpbin.org/ip" -H "accept: application/json"';
