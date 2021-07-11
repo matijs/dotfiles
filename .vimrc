@@ -73,10 +73,10 @@ set hlsearch
 " clear last found search results when hitting Escape twice in command mode
 nnoremap <Esc><Esc> :nohlsearch<CR>
 
-" Use Solarized Dark colorscheme
+" Use Gruvbox colorscheme
 syntax enable
 set background=dark
-colorscheme solarized
+autocmd vimenter * ++nested colorscheme gruvbox
 
 " https://begriffs.com/posts/2019-07-19-history-use-vim.html
 
