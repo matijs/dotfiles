@@ -1,6 +1,8 @@
 [alias]
 	who = config user.email
 	remotes = remote --verbose
+[commit]
+	verbose = true
 [color]
 	pager = false
 	diff = always
