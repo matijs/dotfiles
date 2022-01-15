@@ -73,6 +73,9 @@ set hlsearch
 " clear last found search results when hitting Escape twice in command mode
 nnoremap <Esc><Esc> :nohlsearch<CR>
 
+" wrap lines at 80 characters in Markdown files
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+
 " Use Gruvbox colorscheme
 syntax enable
 set background=dark
@@ -80,9 +83,8 @@ autocmd vimenter * ++nested colorscheme gruvbox
 
 " https://begriffs.com/posts/2019-07-19-history-use-vim.html
 
-" Protect changes between writes. Default values of
-" " updatecount (200 keystrokes) and updatetime
-" " (4 seconds) are fine
+" Protect changes between writes. Default values of updatecount (200 keystrokes)
+" and updatetime (4 seconds) are fine
 set swapfile
 set directory^=~/.vim/swap//
 
