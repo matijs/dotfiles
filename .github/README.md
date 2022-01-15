@@ -33,7 +33,7 @@ you're doing.
 ## Structure
 
 To not clutter the home directory more than strictly necessary, configuration
-files are kept in `~/.config` as much as possible. 
+files are kept in `~/.config` as much as possible.
 
 As for this README file, it lives in `~/.github/README.md`.
 
