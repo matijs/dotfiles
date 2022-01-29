@@ -58,6 +58,9 @@ set list listchars=tab:⇥\ ,nbsp:_,trail:•,extends:»,precedes:«
 
 " enable relative line numbers
 set relativenumber
+" enable absolute line numbers (show the current line number on the current
+" line)
+set number
 
 " start scrolling 4 lines before hitting the bottom or top of the screen
 set scrolloff=4
