@@ -21,6 +21,7 @@
 	defaultBranch = main
 [merge]
 	ff = only
+	conflictstyle = diff3
 [pull]
 	rebase = true
 [push]
