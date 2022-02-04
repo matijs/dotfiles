@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-git_prompt=/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh;
+if [[ $OSTYPE =~ darwin ]]; then
+  git_prompt=/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh;
+else
+  git_prompt=/usr/share/git-core/contrib/completion/git-prompt.sh;
+fi
 
 if [[ -s ${git_prompt} ]]; then
   source "${git_prompt}";
