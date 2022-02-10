@@ -1,6 +1,8 @@
 [alias]
 	who = config user.email
 	remotes = remote --verbose
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
 [commit]
 	verbose = true
 [color]
