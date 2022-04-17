@@ -41,3 +41,5 @@
 	name = matijs
 [includeIf "gitdir:~/.dotfiles"]
 	path = ~/.config/git/dotfiles
+[includeIf "gitdir:~/.git"]
+	path = ~/.config/git/dotfiles
