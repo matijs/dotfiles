@@ -1,13 +1,13 @@
 [alias]
-	who = config user.email
 	remotes = remote --verbose
+	who = config user.email
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
 [commit]
 	verbose = true
 [color]
-	pager = false
 	diff = always
+	pager = false
 [core]
 	editor = /usr/bin/vim
 	pager = /usr/bin/less
@@ -15,6 +15,7 @@
 	colorMoved = zebra
 	colorMovedWS = allow-indentation-change
 [fetch]
+	fsckObjects = true
 	prune = true
 	pruneTags = true
 [help]
@@ -22,23 +23,28 @@
 [init]
 	defaultBranch = main
 [merge]
-	ff = only
 	conflictstyle = diff3
+	ff = only
 [pull]
+	ff = only
 	rebase = true
 [push]
 	default = current
 [rebase]
-	autoStash = true
 	autoSquash = true
+	autoStash = true
+[receive]
+	fsckObjects = true
 [rerere]
 	enabled = true
 [status]
 	showStash = true
 	showUntrackedFiles = all
+[transfer]
+	fsckObjects = true
 [user]
-	useConfigOnly = true
 	name = matijs
+	useConfigOnly = true
 [includeIf "gitdir:~/.dotfiles"]
 	path = ~/.config/git/dotfiles
 [includeIf "gitdir:~/.git"]
