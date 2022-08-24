@@ -1,3 +1,5 @@
+[advice]
+	skippedCherryPicks = false
 [alias]
 	remotes = remote --verbose
 	who = config user.email
