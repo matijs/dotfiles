@@ -1,6 +1,8 @@
 [submodule ".vim/pack/_/start/gruvbox"]
 	path = .vim/pack/_/start/gruvbox
 	url = https://github.com/matijs/gruvbox
+	fetchRecurseSubmodules = true
 [submodule ".vim/pack/_/start/rust.vim"]
 	path = .vim/pack/_/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+	fetchRecurseSubmodules = true
