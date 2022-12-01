@@ -32,6 +32,7 @@
 	ff = only
 	rebase = true
 [push]
+	autoSetupRemote = true
 	default = current
 [rebase]
 	autoSquash = true
