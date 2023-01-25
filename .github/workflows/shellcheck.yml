@@ -1,0 +1,14 @@
+name: ShellCheck
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          docker run --rm --interactive --name gha-shellcheck \
+            --volume "$(pwd):/usr/src:ro" \
+            --workdir /usr/src \
+            koalaman/shellcheck-alpine:stable \
+            shellcheck --shell=bash --external-sources --severity=warning .bashrc
