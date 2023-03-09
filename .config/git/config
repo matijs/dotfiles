@@ -21,6 +21,8 @@
 	fsckObjects = true
 	prune = true
 	pruneTags = true
+[gpg]
+	format = ssh
 [help]
 	autoCorrect = 1
 [init]
@@ -53,3 +55,5 @@
 	path = ~/.config/git/dotfiles
 [includeIf "gitdir:~/.git"]
 	path = ~/.config/git/dotfiles
+[include]
+	path = keys
