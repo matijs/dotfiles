@@ -79,6 +79,10 @@ nnoremap <Esc><Esc> :nohlsearch<CR>
 " wrap lines at 80 characters in Markdown files
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 
+" vim remembers positions, make sure to always jump to position 1 when editing
+" a git commit message
+autocmd FileType gitcommit :goto 1
+
 " Use Gruvbox colorscheme
 syntax enable
 set background=dark
