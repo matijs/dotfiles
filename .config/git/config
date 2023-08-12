@@ -37,6 +37,7 @@
 [rebase]
 	autoSquash = true
 	autoStash = true
+	stat = true
 [receive]
 	fsckObjects = true
 [rerere]
