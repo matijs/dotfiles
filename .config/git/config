@@ -15,6 +15,7 @@
 [diff]
 	colorMoved = zebra
 	colorMovedWS = allow-indentation-change
+	mnemonicPrefix = true
 [fetch]
 	fsckObjects = true
 	prune = true
