@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-git_completion='/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash';
+git_completion_macos='/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash';
+git_completion_fedora='/usr/share/doc/git/contrib/completion/git-completion.bash';
 
-if [[ -x ${git_completion} ]]; then
-  source "${git_completion}";
+if [[ -x ${git_completion_macos} ]]; then
+  source "${git_completion_macos}";
 fi;
 
-unset git_completion
+if [[ -e ${git_completion_fedora} ]]; then
+  source "${git_completion_fedora}";
+fi;
+
+unset git_completion_macos;
+unset git_completion_fedora;
