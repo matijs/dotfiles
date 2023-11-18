@@ -8,3 +8,7 @@ dot() {
     export GIT_DIR="$HOME/.dotfiles";
   fi
 }
+
+r() {
+  cd "$(git root)"
+}
