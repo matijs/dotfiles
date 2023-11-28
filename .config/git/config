@@ -54,6 +54,6 @@
 	name = matijs
 	useConfigOnly = true
 [includeIf "gitdir:~/.dotfiles"]
-	path = dotfiles
+	path = include.d/dotfiles
 [include]
 	path = keys
