@@ -6,6 +6,7 @@
 	remotes = remote --verbose
 	root = rev-parse --show-toplevel
 	who = config user.email
+	pushf = push --force-with-lease
 [commit]
 	verbose = true
 [color]
@@ -29,7 +30,7 @@
 [init]
 	defaultBranch = main
 [merge]
-	conflictstyle = diff3
+	conflictStyle = diff3
 	ff = only
 [pull]
 	ff = only
