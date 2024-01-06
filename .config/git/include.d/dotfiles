@@ -1,4 +1,4 @@
 # This file is only taken into account when the git dir is ~/.git which
 # is only the case in the home dir
 [status]
-	showuntrackedfiles = no
+	showUntrackedFiles = no
