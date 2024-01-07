@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
 dot() {
-  if [[ ${GIT_DIR} == ${HOME}/.dotfiles ]]; then
+  local DOT_FILES="${HOME}/.dotfiles";
+
+  if [[ ${GIT_DIR} == ${DOT_FILES} ]]; then
     unset GIT_DIR;
   else
     [[ ${PWD} == ${HOME} ]] || return;
-    export GIT_DIR="$HOME/.dotfiles";
+    export GIT_DIR=${DOT_FILES};
   fi
 }
 
