@@ -6,8 +6,12 @@ dot() {
   if [[ ${GIT_DIR} == ${DOT_FILES} ]]; then
     unset GIT_DIR;
   else
-    [[ ${PWD} == ${HOME} ]] || return;
-    export GIT_DIR=${DOT_FILES};
+    if [[ ${PWD} == ${HOME} ]]; then
+      export GIT_DIR=${DOT_FILES};
+    else
+      echo "You need to be in ${HOME}";
+      return 1;
+    fi
   fi
 }
 
