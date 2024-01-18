@@ -8,6 +8,7 @@
 	who = config user.email
 	pushf = push --force-with-lease
 [commit]
+	gpgSign = true
 	verbose = true
 [color]
 	diff = always
