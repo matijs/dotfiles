@@ -18,3 +18,11 @@ dot() {
 r() {
   cd "$(git root)"
 }
+
+git() {
+  if [[ $1 == 'pull' ]]; then
+    command echo "Use fetch instead";
+  else
+    command git $@;
+  fi
+}
