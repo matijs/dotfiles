@@ -23,6 +23,6 @@ git() {
   if [[ $1 == 'pull' ]]; then
     command echo "Use fetch instead";
   else
-    command git $@;
+    command git "$@";
   fi
 }
