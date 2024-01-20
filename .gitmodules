@@ -12,3 +12,7 @@
 	path = .vim/pack/_/start/editorconfig-vim
 	url = https://github.com/matijs/editorconfig-vim.git
 	fetchRecurseSubmodules = true
+[submodule ".vim/pack/_/start/vim-prettier"]
+	path = .vim/pack/_/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier.git
+	fetchRecurseSubmodules = true
