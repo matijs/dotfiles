@@ -8,3 +8,7 @@
 	path = .vim/pack/_/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
 	fetchRecurseSubmodules = true
+[submodule ".vim/pack/_/start/editorconfig-vim"]
+	path = .vim/pack/_/start/editorconfig-vim
+	url = https://github.com/matijs/editorconfig-vim.git
+	fetchRecurseSubmodules = true
