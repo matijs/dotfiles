@@ -1,0 +1,10 @@
+name: Status Check
+on: pull_request
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail on accidental 'amend!', 'fixup!', or 'squash!' commits
+        uses: matijs/autosquash-blocker-action@v1.0.0
