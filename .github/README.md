@@ -23,7 +23,7 @@ not how it's set up and it's not tested.
 ~ $ git fetch
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > The next command will overwrite local files. Make sure you know what
 > you're doing.
 
