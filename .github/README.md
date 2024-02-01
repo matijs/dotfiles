@@ -10,8 +10,9 @@ keep my dotfiles under version control.
 Cloning the repository elsewhere and symlinking should also work fine but it's
 not how it's set up and it's not tested.
 
-**WARNING**: feel free to use these dotfiles but make sure to fork the repository
-and make your own changes.
+> [!WARNING]
+> Feel free to use these dotfiles but make sure to fork the repository
+> and make your own changes.
 
 ```bash
 ~ $ export GIT_DIR="${HOME}/.dotfiles"
@@ -22,8 +23,9 @@ and make your own changes.
 ~ $ git fetch
 ```
 
-**WARNING**: the next command will overwrite local files. Make sure you know what
-you're doing.
+> [!WARNING]
+> The next command will overwrite local files. Make sure you know what
+> you're doing.
 
 ```bash
 ~ $ git reset --hard origin/main
