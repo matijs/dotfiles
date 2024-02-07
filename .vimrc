@@ -82,6 +82,8 @@ autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 " vim remembers positions, make sure to always jump to position 1 when editing
 " a git commit message
 autocmd FileType gitcommit :goto 1
+" disable vim-editorconfig for git commit messages
+autocmd FileType gitcommit let b:EditorConfig_disable = 1
 
 " Use Gruvbox colorscheme
 syntax enable
@@ -111,3 +113,4 @@ end
 " persist the undo tree for each file
 set undofile
 set undodir^=~/.vim/undo//
+
