@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fail on accidental 'amend!', 'fixup!', or 'squash!' commits
-        uses: matijs/autosquash-blocker-action@v1.0.0
+        uses: matijs/autosquash-blocker-action@feat/use-script
