@@ -1,3 +1,5 @@
+# vim: noexpandtab filetype=gitconfig
+
 # This file is only taken into account when the git dir is ~/.dotfiles
 [status]
 	showUntrackedFiles = no
