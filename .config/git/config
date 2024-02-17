@@ -31,6 +31,9 @@
 	autoCorrect = 1
 [init]
 	defaultBranch = main
+[log]
+	date = iso8601-local
+	decorate = full
 [merge]
 	conflictStyle = zdiff3
 	ff = only
