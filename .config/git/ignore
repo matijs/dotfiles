@@ -1,3 +1,5 @@
+# vim: filetype=gitignore
+
 # Prevent leaking these directories
 .ssh/
 .dotfiles/
