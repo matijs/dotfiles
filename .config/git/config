@@ -8,6 +8,8 @@
 	remotes = remote --verbose
 	root = rev-parse --show-toplevel
 	who = config user.email
+[branch]
+	sort = -committerdate
 [commit]
 	gpgSign = true
 	verbose = true
