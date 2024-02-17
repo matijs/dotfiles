@@ -18,6 +18,7 @@
 	editor = /usr/bin/vim
 	pager = /usr/bin/less
 [diff]
+	algorithm = histogram
 	colorMoved = zebra
 	colorMovedWS = allow-indentation-change
 	mnemonicPrefix = true
