@@ -1,4 +1,4 @@
-# vim:noexpandtab
+# vim: noexpandtab filetype=gitconfig
 [advice]
 	detachedHead = false
 	skippedCherryPicks = false
