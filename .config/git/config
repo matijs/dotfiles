@@ -32,7 +32,7 @@
 [init]
 	defaultBranch = main
 [merge]
-	conflictStyle = diff3
+	conflictStyle = zdiff3
 	ff = only
 [pull]
 	ff = only
