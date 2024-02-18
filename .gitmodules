@@ -3,16 +3,12 @@
 	# Check d73f9499a3080f553194c009d6ddfe572f0e1362
 	# before trying to be clever and change https to ssh again
 	url = https://github.com/matijs/gruvbox
-	fetchRecurseSubmodules = true
 [submodule ".vim/pack/_/start/rust.vim"]
 	path = .vim/pack/_/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
-	fetchRecurseSubmodules = true
 [submodule ".vim/pack/_/start/editorconfig-vim"]
 	path = .vim/pack/_/start/editorconfig-vim
 	url = https://github.com/matijs/editorconfig-vim.git
-	fetchRecurseSubmodules = true
 [submodule ".vim/pack/_/start/vim-prettier"]
 	path = .vim/pack/_/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
-	fetchRecurseSubmodules = true
