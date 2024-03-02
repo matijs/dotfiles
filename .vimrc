@@ -86,6 +86,9 @@ autocmd FileType gitcommit goto 1
 " disable vim-editorconfig for git commit messages
 autocmd FileType gitcommit let b:EditorConfig_disable = 1
 
+" automatically re-read the file if it was changed outside of Vim
+set autoread
+
 " Use Gruvbox colorscheme
 syntax enable
 set background=dark
