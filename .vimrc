@@ -118,3 +118,14 @@ end
 set undofile
 set undodir^=~/.vim/undo//
 
+" split to the right of the screen
+set splitright
+
+" split to the bottom of the screen
+set splitbelow
+
+" disable arrow keys completely
+noremap <up> <nop>
+noremap <right> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
