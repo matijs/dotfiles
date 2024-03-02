@@ -75,7 +75,7 @@ set incsearch
 " highlight last found search results
 set hlsearch
 " clear last found search results when hitting Escape twice in command mode
-nnoremap <Esc><Esc> :nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 
 " wrap lines at 80 characters in Markdown files
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
