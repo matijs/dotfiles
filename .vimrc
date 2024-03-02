@@ -18,8 +18,9 @@ set encoding=utf-8 nobomb
 " enable ruler at the bottom of the screen
 set ruler
 
-" show a menu
+" show a popup menu to autocomplete commands
 set wildmenu
+set wildoptions=pum
 
 " suppress the intro message (I) when starting vim without a file
 set shortmess=atI
