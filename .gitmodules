@@ -12,3 +12,6 @@
 [submodule ".vim/pack/_/start/vim-prettier"]
 	path = .vim/pack/_/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule ".vim/pack/_/start/vim-fugitive"]
+	path = .vim/pack/_/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
