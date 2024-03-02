@@ -32,7 +32,7 @@ set modelines=2
 " always (=2) display a status line
 set laststatus=2
 
-set statusline=Buf\ %n\ %F\ %{getbufvar(bufnr('%'),'&mod')?'[mod]':''}%r%h%=Ln\ %l/%L,\ Pos\ %o,\ Col\ %c\ %y
+set statusline=Buf\ %n\ %F\ %{getbufvar(bufnr('%'),'&mod')?'[mod]':''}\ %{fugitive#statusline()}%r%h%=Ln\ %l/%L,\ Pos\ %o,\ Col\ %c\ %y
 
 " use 2 spaces for tabs
 set tabstop=2
