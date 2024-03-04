@@ -7,7 +7,7 @@
 	pushf = push --force-with-lease
 	remotes = remote --verbose
 	root = rev-parse --show-toplevel
-	who = config user.email
+	whoami = config --get user.email
 [branch]
 	sort = -committerdate
 [commit]
