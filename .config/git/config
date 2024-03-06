@@ -9,6 +9,7 @@
 	remotes = remote --verbose
 	root = rev-parse --show-toplevel
 	whoami = config --get user.email
+	worktrees = worktree list
 [branch]
 	sort = -committerdate
 [commit]
