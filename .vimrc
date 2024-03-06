@@ -77,14 +77,22 @@ set hlsearch
 " clear last found search results when hitting Escape twice in command mode
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 
-" wrap lines at 80 characters in Markdown files
-autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+augroup filetype_markdown
+  " clear previous autocmd's in the group
+  autocmd!
+  " wrap lines at 80 characters in Markdown files
+  autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+augroup END
 
-" vim remembers positions, make sure to always jump to position 1 when editing
-" a git commit message
-autocmd FileType gitcommit goto 1
-" disable vim-editorconfig for git commit messages
-autocmd FileType gitcommit let b:EditorConfig_disable = 1
+augroup filetype_gitcommit
+  " clear previous autocmd's in the group
+  autocmd!
+  " vim remembers positions, make sure to always jump to position 1 when editing
+  " a git commit message
+  autocmd FileType gitcommit goto 1
+  " disable vim-editorconfig for git commit messages
+  autocmd FileType gitcommit let b:EditorConfig_disable = 1
+augroup END
 
 " automatically re-read the file if it was changed outside of Vim
 set autoread
@@ -92,7 +100,11 @@ set autoread
 " Use Gruvbox colorscheme
 syntax enable
 set background=dark
-autocmd vimenter * ++nested colorscheme gruvbox
+augroup filetype_any
+  " clear previous autocmd's in the group
+  autocmd!
+  autocmd VimEnter * ++nested colorscheme gruvbox
+augroup END
 
 " https://begriffs.com/posts/2019-07-19-history-use-vim.html
 
