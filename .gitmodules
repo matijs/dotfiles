@@ -15,3 +15,6 @@
 [submodule ".vim/pack/_/start/vim-fugitive"]
 	path = .vim/pack/_/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/pack/_/start/nerdtree"]
+	path = .vim/pack/_/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git

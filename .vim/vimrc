@@ -141,3 +141,8 @@ noremap <up> <nop>
 noremap <right> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
+
+" NERDTree
+let NERDTreeShowHidden=1
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+
