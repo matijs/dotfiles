@@ -1,6 +1,7 @@
 # vim: noexpandtab filetype=gitconfig
 [advice]
 	detachedHead = false
+	forceDeleteBranch = false
 	skippedCherryPicks = false
 [alias]
 	autosquash = -c sequence.editor=true rebase --interactive
