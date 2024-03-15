@@ -21,8 +21,7 @@ export LESSHISTFILE='-'
 # - make `less` more colorful: -R
 export LESS='FXR'
 # Tell git never to chdir up into the home directory
-# This makes it possible to have the home directory as a work tree using the default .git as the git dir
-export GIT_CEILING_DIRS="${HOME}"
+export GIT_CEILING_DIRECTORIES="${HOME}"
 
 if [[ $OSTYPE =~ darwin ]]; then
   export LSCOLORS=dxbxbEaEBxxEhEhBaDaCaD;
