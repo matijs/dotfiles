@@ -43,6 +43,8 @@
 [merge]
 	conflictStyle = zdiff3
 	ff = only
+[pager]
+	status = true
 [pull]
 	ff = only
 	rebase = true
