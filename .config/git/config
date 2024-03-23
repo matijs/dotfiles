@@ -5,6 +5,7 @@
 	skippedCherryPicks = false
 [alias]
 	autosquash = -c sequence.editor=true rebase --interactive
+	difft = -c diff.external=difft diff
 	log-no-tags = log --decorate-refs-exclude=refs/tags
 	pushf = push --force-with-lease
 	remotes = remote --verbose
