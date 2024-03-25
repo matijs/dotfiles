@@ -17,9 +17,6 @@
 [commit]
 	gpgSign = true
 	verbose = true
-[color]
-	diff = always
-	pager = false
 [core]
 	editor = /usr/bin/vim
 	pager = /usr/bin/less
