@@ -7,6 +7,7 @@
 	autosquash = -c sequence.editor=true rebase --interactive
 	difft = -c diff.external=difft diff
 	fixup = commit --fixup=HEAD
+	out = log @{u}..
 	please = push --force-with-lease
 	purge = clean -dfX -- :/
 	remotes = remote --verbose
