@@ -64,6 +64,8 @@
 [status]
 	showStash = true
 	showUntrackedFiles = all
+[tag]
+	sort = version:refname
 [transfer]
 	fsckObjects = true
 [url "git@github.com:"]
