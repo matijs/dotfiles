@@ -9,6 +9,7 @@
 	fixup = commit --fixup=HEAD
 	out = log @{u}..
 	please = push --force-with-lease
+	pristine = clean -dfx -- :/
 	purge = clean -dfX -- :/
 	remotes = remote --verbose
 	root = rev-parse --show-toplevel
