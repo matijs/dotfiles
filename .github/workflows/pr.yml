@@ -1,9 +1,12 @@
-name: Status Check
+name: Git checks
+
 on: pull_request
 
+permissions:
+  contents: read
+
 jobs:
-  check:
-    name: Check
+  no-fixups:
     runs-on: ubuntu-latest
     steps:
       - uses: matijs/no-fixups-action@e80ec9a460eb369f99385d0a11347f28da6ca0f6 #v1.1.1
