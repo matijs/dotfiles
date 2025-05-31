@@ -61,6 +61,11 @@ set cursorline
 " mode turn it back on
 autocmd InsertEnter,InsertLeave * set cursorline!
 
+" Show different cursors for different modes, see :help guicursor
+let &t_SI = "\<Esc>[5 q" " blinking I beam in insert mode
+let &t_SR = "\<Esc>[3 q" " blinking underline in replace mode
+let &t_EI = "\<Esc>[2 q" " steady block in normal mode
+
 " show invisible characters
 set list listchars=tab:⇥\ ,nbsp:_,trail:•,extends:»,precedes:«
 
