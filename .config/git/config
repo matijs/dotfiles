@@ -64,6 +64,7 @@
 [rerere]
 	enabled = true
 [status]
+	relativePaths = false
 	showStash = true
 	showUntrackedFiles = all
 [tag]
