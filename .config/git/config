@@ -28,6 +28,7 @@
 	colorMoved = zebra
 	colorMovedWS = allow-indentation-change
 	mnemonicPrefix = true
+	renames = copies
 [fetch]
 	fsckObjects = true
 	prune = true
