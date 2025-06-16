@@ -118,6 +118,10 @@ augroup filetype_any
   autocmd VimEnter * ++nested colorscheme rosepine
 augroup END
 
+" Use new regular expression engine
+" See: https://jameschambers.co.uk/vim-typescript-slow
+set regexpengine=0
+
 " https://begriffs.com/posts/2019-07-19-history-use-vim.html
 
 " Protect changes between writes. Default values of updatecount (200 keystrokes)
