@@ -29,6 +29,7 @@
 	colorMovedWS = allow-indentation-change
 	mnemonicPrefix = true
 	renames = copies
+	wsErrorHighlight = all
 [fetch]
 	fsckObjects = true
 	prune = true
