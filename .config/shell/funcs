@@ -26,3 +26,11 @@ git() {
     command git "$@";
   fi
 }
+
+tmux() {
+  if [[ $# -eq 0 ]]; then
+    command tmux new-session -A -s tmux -n  '~' -c "${HOME}"
+  else
+    command tmux "$@"
+  fi
+}
