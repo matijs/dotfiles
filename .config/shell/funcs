@@ -3,16 +3,21 @@
 dot() {
   local DOT_FILES="${HOME}/.dotfiles";
 
-  if [[ ${GIT_DIR} == ${DOT_FILES} ]]; then
-    unset GIT_DIR;
-  else
-    if [[ ${PWD} == ${HOME} ]]; then
-      export GIT_DIR=${DOT_FILES};
-    else
-      echo "You need to be in ${HOME}";
-      return 1;
-    fi
+  # exit dotfiles-mode
+  if [[ "${GIT_DIR}" == "${DOT_FILES}" ]]; then
+    unset GIT_DIR
+    return
   fi
+
+  # enter dotfiles-mode
+  if [[ "${PWD}" == "${HOME}" ]]; then
+    export GIT_DIR=${DOT_FILES}
+    return
+  fi
+
+  # trying to enter dotfiles-mode while not in ${HOME} errors
+  printf '%s\n' "You need to be in ${HOME}" >&2
+  return 1
 }
 
 r() {
