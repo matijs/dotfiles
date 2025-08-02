@@ -20,11 +20,23 @@ r() {
 }
 
 git() {
-  if [[ $1 == 'pull' ]]; then
-    command echo "Use fetch instead";
-  else
-    command git "$@";
+  # without arguments run git status
+  if [[ $# -eq 0 ]]; then
+    command git status
+    return
   fi
+
+  # prevent running git pull
+  if [[ "$1" == "pull" ]]; then
+    command printf '%s\n' "Use fetch instead" >&2
+    return 1
+  fi
+
+  command git "$@"
+}
+
+f() {
+  fzf --print0 | xargs -0 -o vim
 }
 
 tmux() {
