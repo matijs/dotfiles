@@ -9,4 +9,4 @@ jobs:
   no-fixups:
     runs-on: ubuntu-latest
     steps:
-      - uses: matijs/no-fixups-action@183d9d2310ed1382144a873e83d03c0d20be55f1 #v1.1.2
+      - uses: matijs/no-fixups-action@7b2eba7c4c38f47da924a88d0f478082154903a2 #v1.1.3
