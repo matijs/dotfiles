@@ -16,7 +16,9 @@ set visible-stats on
 "\C-p": menu-complete
 "\C-h": 'cd\015'
 
-# Bind alt-s to repeating the last command with sudo
+# Bind alt-s to repeating the last command with sudo, but only in Bash
+$if Bash
 "\es": "sudo !!\C-m"
+$endif
 
 # Tip: use `bind -p` to find out what is bound and what is unbound
