@@ -22,7 +22,13 @@ alias cp='cp -i';
 # always colorise grep output
 alias grep='grep --color=auto';
 
-# make bash expand other aliasses for sudo, http://git.io/wtfbash
+# From https://www.gnu.org/software/bash/manual/bash.html#Aliases:
+#
+# > If the last character of the alias value is a blank, then the shell checks
+# > the next command word following the alias for alias expansion.
+#
+# The following makes "sudo ll" work where "ll" itself is an alias that would
+# otherwise not be expanded.
 alias sudo='sudo ';
 
 # git aliases
