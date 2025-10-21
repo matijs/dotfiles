@@ -1,6 +1,9 @@
 name: Git checks
 
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - dotfiles
 
 permissions:
   contents: read
