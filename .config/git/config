@@ -73,6 +73,7 @@
 [transfer]
 	fsckObjects = true
 [url "git@github.com:"]
+	insteadOf = github:
 	pushInsteadOf = https://github.com/
 [user]
 	name = matijs
