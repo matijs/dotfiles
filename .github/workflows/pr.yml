@@ -5,8 +5,7 @@ on:
     branches:
       - dotfiles
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   no-fixups:
