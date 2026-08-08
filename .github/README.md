@@ -16,7 +16,7 @@ not how it's set up and it's not tested.
 
 ```bash
 ~ $ export GIT_DIR="${HOME}/.dotfiles"
-~ $ git --work-tree="${HOME}" init
+~ $ git --work-tree="${HOME}" -c init.defaultBranch=dotfiles init
 # versions of git before 2.46.0 do not know the `set` subcommand in the command
 # below so leave it out
 ~ $ git config set status.showUntrackedFiles no
