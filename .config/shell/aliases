@@ -37,6 +37,6 @@ alias gl='git log --oneline --all --color --graph --decorate';
 # always use vim instead of vi, this _strangly_ prevents unexplained non-zero exit codes on macOS
 alias vi='vim';
 
-alias ip='curl -X GET "https://httpbin.org/ip" -H "accept: application/json"';
+alias myip='curl -X GET "https://httpbin.org/ip" -H "accept: application/json"';
 alias week='date +%V';
 alias epoch='date +%s';
