@@ -1,8 +1,11 @@
 # vim: filetype=gitignore
 
-# Prevent leaking these directories
-.ssh/
+# Prevent leaking
 .dotfiles/
+# Recursively ignore
+.ssh/**
+# Unignore
+!.ssh/config
 
 # Prevent leaking .bash_history
 .bash_history
