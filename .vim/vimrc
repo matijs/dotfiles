@@ -78,10 +78,6 @@ set number
 " start scrolling 4 lines before hitting the bottom or top of the screen
 set scrolloff=4
 
-" ignore case when searching
-set ignorecase
-" but be smart about it
-set smartcase
 " highlight search results as they are found
 set incsearch
 " highlight last found search results
