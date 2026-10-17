@@ -21,7 +21,9 @@ dot() {
 }
 
 r() {
-  cd "$(git root)"
+  local git_root
+  git_root=$(git rev-parse --show-toplevel 2>/dev/null) || return 1
+  cd -- "${git_root}"
 }
 
 git() {
